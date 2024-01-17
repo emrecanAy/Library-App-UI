@@ -1,0 +1,16 @@
+<div class="card" style="height: 30%;">
+  <div class="header">
+    <h5 class="title">{{ title }}</h5>
+    <p class="category">{{ subtitle }}</p>
+  </div>
+  <div class="content">
+    <div class="chart-container">
+      <div id="chart" [attr.id]="chartId" class="ct-chart {{ chartClass }}"></div>
+      <div id="legend" class="legend">
+        <ul *ngFor="let item of legendItems" style="list-style-type: none;">
+          <li><i [ngClass]="item.imageClass"></i> {{ item.title }}</li>
+      </ul>
+      </div>
+    </div>
+  </div>
+</div>

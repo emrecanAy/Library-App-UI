@@ -1,0 +1,20 @@
+.card {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .content {
+    display: flex;
+    justify-content: space-between; /* Align items horizontally with space between them */
+  }
+  
+  .chart-container {
+    display: flex;
+    width: 100%;
+  }
+  
+  #chart {
+    flex: 1; /* Take remaining space */
+  }
+ 
+  
